@@ -17,9 +17,24 @@ class Receipe:Identifiable,Decodable{
     var prepTime:String
     var cookTime:String
     var totalTime:String
+    var highlights:[String]
     var servings:Int
-    var ingredients:[String]
+    var ingredients:[ingredients]
     var directions:[String]
+    
+    
+    
+    
+}
+
+class ingredients:Identifiable,Decodable {
+    
+    var id:UUID?
+    var name:String
+    var num:Int?
+    var denom:Int?
+    var  unit:Int?
+    
     
     
     

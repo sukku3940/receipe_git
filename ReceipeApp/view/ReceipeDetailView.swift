@@ -23,17 +23,14 @@ struct ReceipeDetailView: View {
             VStack(alignment:.leading){
                 Text("Ingredients").font(.headline).bold()
                 
-                ForEach(receipe.ingredients,id: \.self){ item in
+                ForEach(receipe.ingredients){ item in
                     
-                    Text("."+item).bold()
-                    
-                    
+                    Text("." + item.name).bold()
                     
                     
                     
                     
-                    
-                    
+        
                 }
                 .padding(.bottom, 5.0)
                 
