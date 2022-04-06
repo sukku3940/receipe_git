@@ -9,9 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     
+ @EnvironmentObject   var model:receipemodel
     
     var array=["pizza","Biryani","somasa"]
-  @ObservedObject var model = receipemodel()
+ 
     
     var body: some View {
         

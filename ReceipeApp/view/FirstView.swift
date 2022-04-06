@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct FirstView: View {
+    @EnvironmentObject var model:receipemodel
+    
+   @State var Tabindex=0
     var body: some View {
-        TabView{
+        TabView(selection:$Tabindex){
             
             
             Text("this is main menu").tabItem(){
@@ -33,6 +36,10 @@ struct FirstView: View {
             }
             
             
+        }
+        ReceipeFeaturedView().tabItem(){
+            Image(systemName:"pencil")
+            Text("First")
         }
     }
 }

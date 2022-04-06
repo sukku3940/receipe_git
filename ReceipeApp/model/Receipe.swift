@@ -33,10 +33,7 @@ class ingredients:Identifiable,Decodable {
     var name:String
     var num:Int?
     var denom:Int?
-    var  unit:Int?
-    
-    
-    
-    
-    
-}
+    var  unit:String?
+    }
+
+

@@ -25,7 +25,7 @@ struct ReceipeDetailView: View {
                 
                 ForEach(receipe.ingredients){ item in
                     
-                    Text("." + item.name).bold()
+                    Text("." + item.name)
                     
                     
                     
